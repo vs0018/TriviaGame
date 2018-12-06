@@ -30,6 +30,7 @@
 
 //result stored as boolean in its own array (response array)
 
+//use "responses[index] = evaluated answer" or push ("responses.push(evaluated answer)")?
 
 //run function to generate next question is called
 
@@ -39,7 +40,9 @@
 
 
 
-//when time runs out, use Array.filter() method to determine # of the player's answers that evaluated to 'true'
+//when time runs out, use Array.filter() method to create new array (true responses) from the response array
+
+//determine # of the player's answers that evaluated to 'true' by getting length of true responses array
 
 
-//display total correct (# of trues/total number of questions)
+//display length of this array (# of trues) / total number of questions
