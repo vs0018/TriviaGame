@@ -1,9 +1,12 @@
 $(document).ready(function(){
 
-    $("#container").hide();
-    $("#endGame").hide();
-    $("#timer").hide();
+    $("#container, #endGame, #timer, #secondTitle").hide();
 
+    $("#start").click(function () {
+        $("#container, #timer, #secondTitle").show();
+        $("#winona, #button, #firstTitle").hide();
+
+    })
 });
 
 
