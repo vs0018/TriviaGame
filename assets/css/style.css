@@ -31,31 +31,6 @@ html {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
-
-b {
-    position: relative;
-    display: block;
-    font-family: helvetica neue, helvetica, sans-serif;
-    line-height: 1.15em;
-    margin-top: -1.15em;
-    top: 2.3em;
-    font-size: 0.67em;
-    font-weight: 400;
-    letter-spacing: 0.025em;
-    opacity: 0.75;
-    text-align: center;
-  }
-  
-  b span {
-    font-size: 0.785em;
-    font-weight: 400;
-    opacity: 0.4;
-  }
-  
-  #intro {
-    width: 200px;
-    margin: 100px auto 0;
-  }
   
   .button {
       display: inline-block;
@@ -85,7 +60,7 @@ b {
       width: 100%;
       height: 100%;
       padding: 24px 34px 22px 34px;
-      border: 2px solid #04049d;
+      border: 2px solid slategray;
   }
   
   .button-dark .top {
@@ -95,7 +70,7 @@ b {
   .button .top .label {
       font-family: sans-serif;
       font-weight: 600;
-      color: #04049d;
+      color: black;
       font-size: 12px;
       line-height: 110%;
       letter-spacing: 2px;
@@ -123,7 +98,7 @@ b {
   
   .button-border {
       position: absolute;
-      background-color: #2acdc1;
+      background-color: darkgoldenrod;
       -webkit-transition: all .25s ease-out;
       -moz-transition: all .25s ease-out;
       -o-transition: all .25s ease-out;
