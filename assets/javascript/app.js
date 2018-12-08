@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-    $("#container, #endGame, #timer, #secondTitle").hide();
+    $("#container, #endGame, #time, #secondTitle").hide();
 
     $("#start").click(function () {
-        $("#container, #timer, #secondTitle").show();
+        $("#container, #time, #secondTitle").show();
         
         $("#winona, #button, #firstTitle").hide();
         
@@ -12,7 +12,30 @@ $(document).ready(function(){
         
             $("#questions, #timer").hide();
         }, 60000);
+
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10)
+                seconds = parseInt(timer % 60, 10);
+        
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+        
+                display.textContent = minutes + ":" + seconds;
+        
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        var oneMinute = 60 * 1,
+        display = document.querySelector('#timer');
+        startTimer(oneMinute, display);
     });
+
+
 });
 
 
