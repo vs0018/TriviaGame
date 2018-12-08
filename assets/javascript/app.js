@@ -3,14 +3,21 @@ $(document).ready(function(){
     $("#container, #endGame, #time, #secondTitle").hide();
 
     $("#start").click(function () {
+        var isRunning = "true";
+        var oneMinute = 60 * 1;
+
         $("#container, #time, #secondTitle").show();
         
         $("#winona, #button, #firstTitle").hide();
-        
-        setTimeout(function(){
+
+        setTimeout(function(isRunning){
+            var isRunning = "false";
+
             $("#endGame").show();
         
-            $("#questions, #timer").hide();
+            $("#questions, #time").hide();
+
+            return isRunning;
         }, 60000);
 
         function startTimer(duration, display) {
@@ -30,9 +37,11 @@ $(document).ready(function(){
             }, 1000);
         }
 
-        var oneMinute = 60 * 1,
         display = document.querySelector('#timer');
+        
         startTimer(oneMinute, display);
+        
+        return isRunning;
     });
 
 
