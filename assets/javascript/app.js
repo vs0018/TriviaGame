@@ -3,21 +3,20 @@ $(document).ready(function(){
     $("#container, #endGame, #time, #secondTitle").hide();
 
     $("#start").click(function () {
-        var isRunning = "true";
         var oneMinute = 60 * 1;
 
         $("#container, #time, #secondTitle").show();
         
         $("#winona, #button, #firstTitle").hide();
 
-        setTimeout(function(isRunning){
+        setTimeout(function(){
             var isRunning = "false";
 
             $("#endGame").show();
         
             $("#questions, #time").hide();
 
-            return isRunning;
+            stopGame();
         }, 60000);
 
         function startTimer(duration, display) {
@@ -36,6 +35,11 @@ $(document).ready(function(){
                 }
             }, 1000);
         }
+
+        function stopGame (){
+            //add logic for score calculation here
+        };
+
 
         display = document.querySelector('#timer');
         
