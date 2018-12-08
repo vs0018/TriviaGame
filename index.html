@@ -6,12 +6,20 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="assets/javascript/app.js"></script>
 </head>
 <body>
-    <h1>Are you ready to shoop?</h1>
-    <h3>Time remaining: </h3>
+    <section id="title">
+        <h1>Are you ready to shoop?</h1>
+        <br>
+        <img src="assets/images/winona.gif">
+        <br>
+        <button>Start!</button>
+        <h3 id="timer">Time remaining: </h3>
+    </section>
+    <br>
     <div id="container">
         <div id="ques1">
             <h3>#1: "Is it in his eyes?"</h3>
@@ -61,11 +69,14 @@
                 <input type="radio">Oh no! That's just his arms</input><br>
         </div>
         <br>
+        <div>
+            <h3>Take a lesson from Betty!</h3>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/scJGn-BPVSU?start=15&end=148" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 id="correct"></h3>
+            <h3 id ="incorrect"></h3>
+            <h3 id="unanswered"></h3>
+        </div>
     </div>
-    <div id="correct"></div>
-    <div id ="incorrect"></div>
-
-<!-- Betty Everett video: https://www.youtube.com/watch?v=4L7WTpxcPfQ-->
-
 </body>
 </html>
