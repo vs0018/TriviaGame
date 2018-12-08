@@ -4,9 +4,15 @@ $(document).ready(function(){
 
     $("#start").click(function () {
         $("#container, #timer, #secondTitle").show();
+        
         $("#winona, #button, #firstTitle").hide();
-
-    })
+        
+        setTimeout(function(){
+            $("#endGame").show();
+        
+            $("#questions, #timer").hide();
+        }, 60000);
+    });
 });
 
 
