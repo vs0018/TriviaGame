@@ -1,3 +1,8 @@
+var completed = 0;
+var correct = 0;
+var incorrect = 0;
+var unanswered = 0;
+
 $(document).ready(function(){
 
     $("#container, #endGame, #time, #secondTitle").hide();
@@ -10,7 +15,6 @@ $(document).ready(function(){
         $("#winona, #button, #firstTitle").hide();
 
         setTimeout(function(){
-            var isRunning = "false";
 
             $("#endGame").show();
         
@@ -38,6 +42,14 @@ $(document).ready(function(){
 
         function stopGame (){
             //add logic for score calculation here
+            $("input").each(function(){
+                completed = $("input").checked
+                if (completed && $(this).val() === "true") {
+                    correct++;
+                }
+            });
+            
+            
         };
 
 
@@ -45,7 +57,6 @@ $(document).ready(function(){
         
         startTimer(oneMinute, display);
         
-        return isRunning;
     });
 
 
