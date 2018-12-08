@@ -1,3 +1,31 @@
+$(document).ready(function(){
+
+    $("#container").hide();
+    $("#endGame").hide();
+    $("#timer").hide();
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //variables needed:
     //game object
         //question objects (4)
